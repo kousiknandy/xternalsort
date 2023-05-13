@@ -31,6 +31,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 2: exit(0)
     files = [getline(sys.argv[i]) for i in range(1, len(sys.argv))]
     lines = [next(f) for f in files]
+    # TODO use heap here and rewrite
     while True:
         idx = None
         line = None
